@@ -1,27 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    max-width: 3260px;
+    margin: auto;
+    background-color: #ffffff;
+}
+@layer base {
+    ._container {
+        @apply max-w-[1920px] mx-auto px-[3%] md:px-[8%];
+    }
+    .__anton {
+        font-family: "Anton", sans-serif;
+      }
+}
+html, body {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+  
+/* For Webkit-based browsers like Chrome, Safari, and Opera */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+   display: none;
+}
+.slick-next:before,
+.slick-prev:before {
+    display: none !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
