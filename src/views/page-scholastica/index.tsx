@@ -46,7 +46,7 @@ const ScholasticaPageUI = () => {
               inputMode="numeric" // Hides spinner on mobile browsers
               pattern="[0-9]*" // Only allows numeric input
               id="withinMark"
-              className="mt-1 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary appearance-none" // added appearance-none
+              className="bg-white mt-1 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary appearance-none" // added appearance-none
               value={withinMark}
               onChange={(e) => setWithinMark(e.target.value)}
               required
@@ -61,7 +61,7 @@ const ScholasticaPageUI = () => {
               inputMode="numeric" // Hides spinner on mobile browsers
               pattern="[0-9]*" // Only allows numeric input
               id="totalMark"
-              className="mt-1 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary appearance-none" // added appearance-none
+              className="bg-white mt-1 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary appearance-none" // added appearance-none
               value={totalMark}
               onChange={(e) => setTotalMark(e.target.value)}
               required
@@ -74,7 +74,7 @@ const ScholasticaPageUI = () => {
             <input
               type="text"
               id="marks"
-              className="mt-1 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+              className="bg-white mt-1 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
               value={marks}
               onChange={(e) => setMarks(e.target.value)}
               required
