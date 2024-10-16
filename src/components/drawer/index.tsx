@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation"; // Import useRouter from Next.js
 import { FaCaretDown } from "react-icons/fa";
-
+import Image from "next/image";
 type Props = {
   buttonContent?: any;
 };
@@ -52,16 +52,27 @@ const DrawerUI = ({ buttonContent }: Props) => {
                     </span>
                   </button>
                   {drop && (
-                    <div className="mt-2">
+                    <div className="mt-4 space-y-4">
                       {ToolsData?.map((item: any, i: any) => (
-                        <li key={i} className="text-lg">
-                          <a
-                            href="#"
+                        <div
+                          key={i}
+                          className="flex justify-start items-center gap-3"
+                        >
+                          <Image
+                            src={item?.icon ? item?.icon : "/images/10.svg"}
+                            alt="icon"
+                            width={0}
+                            height={0}
+                            sizes="100vw"
+                            className="w-[40px] h-[40px] object-cover"
+                          />
+                          <button
+                            className="text-lg"
                             onClick={() => handleNavigation(item.url)} // Navigate to the URL and close drawer
                           >
                             {item?.title}
-                          </a>
-                        </li>
+                          </button>
+                        </div>
                       ))}
                     </div>
                   )}

@@ -80,22 +80,25 @@ const Home = () => {
             Grade Calculator
           </h1>
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label
-                htmlFor="total"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Total Mark:
-              </label>
-              <input
-                type="number"
-                id="total"
-                className="bg-white mt-1 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary appearance-none text-black"
-                value={total !== null ? total : ""}
-                onChange={(e) => setTotal(parseFloat(e.target.value))}
-                required
-              />
-            </div>
+          <div>
+  <label
+    htmlFor="total"
+    className="block text-sm font-medium text-gray-700"
+  >
+    Total Mark:
+  </label>
+  <input
+    type="number"
+    id="total"
+    className="bg-white mt-1 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary appearance-none text-black"
+    value={total !== null ? total : ""}
+    onChange={(e) => setTotal(parseInt(e.target.value, 10))} // Changed to parseInt
+    step="1" // Allows only integers
+    min="0"  // Prevents negative numbers
+    required
+  />
+</div>
+
             <div>
               <label
                 htmlFor="score"
