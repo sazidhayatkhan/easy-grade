@@ -31,4 +31,20 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 .slick-prev:before {
     display: none !important;
 }
+/* Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Optional: If you want to hide arrows on older IE (won't work on all) */
+input[type="number"]::-ms-clear {
+  display: none;
+}
 
