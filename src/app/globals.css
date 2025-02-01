@@ -17,6 +17,21 @@ body {
         font-family: "Anton", sans-serif;
       }
 }
+/* Force light mode */
+:root {
+  color-scheme: light;
+}
+
+html {
+  background-color: white !important;
+  color: black !important;
+}
+
+.dark {
+  background-color: white !important;
+  color: black !important;
+}
+
 html, body {
   overflow: auto;
   scrollbar-width: none; /* Firefox */
