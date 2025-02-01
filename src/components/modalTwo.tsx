@@ -26,11 +26,11 @@ const ModalTwo: React.FC<Props> = (props) => {
           </form>
           <h3 className="font-bold text-lg">Hello dear colleagues ! ❤</h3>
           <div>
-            <p className="pt-3">1. Enter the total average mark</p>
-            <p className="py-1">2. Input student''s score</p>
-            <p>3. Press on calculate grade</p>
+            <p className="pt-3">1. Enter the Total Mark</p>
+            <p className="py-1">2. Input student's score</p>
+            <p>3. Press on Calculate Grade</p>
             <p className="py-1">
-              4. For next student just click refresh and put next student's score
+              4. For next student just click Refresh and put next student's Score
             </p>
           </div>
         </div>

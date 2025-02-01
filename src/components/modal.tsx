@@ -26,9 +26,9 @@ const Modal: React.FC<Props> = (props) => {
           </form>
           <h3 className="font-bold text-lg">Hello dear colleagues ! ❤</h3>
           <div>
-            <p className="pt-3">1. Enter your desired average marks.</p>
-            <p className="py-1">2. Enter the total marks for the area.</p>
-            <p>3. Input the individual marks obtained by students.</p>
+            <p className="pt-3">1. Enter your desired Average Marks</p>
+            <p className="py-1">2. Enter the Total Marks for the Area</p>
+            <p>3. Input the individual marks obtained by students</p>
             <p className="py-1">
               4. Separate each student's marks using a comma (,) instead of a
               plus (+) symbol.

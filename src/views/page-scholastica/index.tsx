@@ -55,9 +55,9 @@ const ScholasticaPageUI = () => {
               />
             </div>
             
-            {/* Total Course Mark Input */}
+            {/* Total Area Mark Input */}
             <div>
-              <label htmlFor="totalMark" className="block text-sm font-medium text-gray-700">Total Course Mark:</label>
+              <label htmlFor="totalMark" className="block text-sm font-medium text-gray-700">Total Area Mark:</label>
               <input
                 type="text" // Changed from number to text to handle empty string
                 inputMode="numeric" // Hides spinner on mobile browsers
