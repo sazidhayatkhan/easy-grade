@@ -1,5 +1,6 @@
 "use client";
 import Modal from "@/components/modal";
+import ModalTwo from "@/components/modalTwo";
 import { useState } from "react";
 import { MdOutlineRefresh } from "react-icons/md";
 
@@ -215,7 +216,7 @@ const Home = () => {
     htmlFor="total"
     className="block text-sm font-medium text-gray-700"
   >
-    Total Mark:
+    Total Mark (5-20) :
   </label>
   <input
     type="number"
@@ -274,7 +275,7 @@ const Home = () => {
         </div>
       </div>
       <div className="flex justify-center items-center">
-          <Modal />
+          <ModalTwo />
         </div>
     </div>
   );
